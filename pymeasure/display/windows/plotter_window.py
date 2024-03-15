@@ -52,7 +52,7 @@ class PlotterWindow(QtWidgets.QMainWindow):
     .. pyqtgraph.PlotItem: http://www.pyqtgraph.org/documentation/graphicsItems/plotitem.html
     """
 
-    def __init__(self, plotter, refresh_time=0.1, linewidth=1, parent=None):
+    def __init__(self, plotter, refresh_time=0.1, linewidth=2, parent=None):
         super().__init__(parent)
         self.plotter = plotter
         self.refresh_time = refresh_time

@@ -41,7 +41,7 @@ class PlotWidget(TabWidget, QtWidgets.QWidget):
     """
 
     def __init__(self, name, columns, x_axis=None, y_axis=None, refresh_time=0.2,
-                 check_status=True, linewidth=1, parent=None):
+                 check_status=True, linewidth=2, parent=None):
         super().__init__(name, parent)
         self.columns = columns
         self.refresh_time = refresh_time
@@ -114,8 +114,8 @@ class PlotWidget(TabWidget, QtWidgets.QWidget):
                              y=self.plot_frame.y_axis,
                              **kwargs,
                              )
-        curve.setSymbol(None)
-        curve.setSymbolBrush(None)
+        curve.setSymbol('o')
+        curve.setSymbolBrush('k')
         return curve
 
     def update_x_column(self, index):

@@ -58,7 +58,7 @@ class DockWidget(TabWidget, QtWidgets.QWidget):
     :param parent: Passed on to QtWidgets.QWidget. Default is None
     """
 
-    def __init__(self, name, procedure_class, x_axis_labels=None, y_axis_labels=None, linewidth=1,
+    def __init__(self, name, procedure_class, x_axis_labels=None, y_axis_labels=None, linewidth=2,
                  layout_path='./', layout_filename='', parent=None):
         super().__init__(name, parent)
 
